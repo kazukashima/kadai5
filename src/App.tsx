@@ -7,10 +7,7 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
-      {/* 地図ページ → "/" にアクセスしたとき */}
         <Route path="/map" element={<MapPage />} />
-
-        {/* 詳細ページ → "/spot/3" のようなURLで開く */}
         <Route path="/spot/:id" element={<SpotDetailPage />} />
         <Route path="/" element={<Home/>} />
     </Routes>

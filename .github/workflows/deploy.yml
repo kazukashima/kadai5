@@ -97,3 +97,5 @@ jobs:
         run: firebase deploy --only hosting --project ${{ secrets.FIREBASE_PROJECT_ID }}
         env:
           GOOGLE_APPLICATION_CREDENTIALS: ${{ github.workspace }}/firebase-key.json
+
+          # 何処を変えたのか？
